@@ -1,8 +1,8 @@
-# �� AdTool Pro - Split Ad Account from BM & Reactivate Ad Account
+# AdTool Pro - Split Ad Account from BM & Reactivate Ad Account
 
 > **Công cụ tự động hóa quản lý tài khoản quảng cáo Facebook Business Manager**
 
-[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/YOUR_USERNAME/YOUR_REPO)
+[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/hasoftware/AdToolAdAccount)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Facebook](https://img.shields.io/badge/Facebook-Business%20Manager-blue.svg)](https://business.facebook.com)
 
@@ -57,7 +57,7 @@ AdTool Pro là một công cụ mạnh mẽ giúp tự động hóa các tác v�
 javascript: (function () {
   var script = document.createElement("script");
   script.src =
-    "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/AdTool_Pro_Combined.js";
+    "https://raw.githubusercontent.com/hasoftware/AdToolAdAccount/refs/heads/main/AdTool_Pro_Combined_by_HoangAnhDev.js";
   document.head.appendChild(script);
   script.onload = function () {
     startAdToolPro();
@@ -82,7 +82,7 @@ javascript: (function () {
 
 ```javascript
 fetch(
-  "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/AdTool_Pro_Combined.js"
+  "https://raw.githubusercontent.com/hasoftware/AdToolAdAccount/refs/heads/main/AdTool_Pro_Combined_by_HoangAnhDev.js"
 )
   .then((response) => response.text())
   .then((code) => {
