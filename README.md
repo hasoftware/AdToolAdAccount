@@ -1,177 +1,270 @@
-# 🚀 AdTool Pro - Split & Reactivate Ad Accounts
+# �� AdTool Pro - Split Ad Account from BM & Reactivate Ad Account
 
-**HASoftware - Ads Solution - Auto Version**
+> **Công cụ tự động hóa quản lý tài khoản quảng cáo Facebook Business Manager**
+
+[![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/YOUR_USERNAME/YOUR_REPO)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![Facebook](https://img.shields.io/badge/Facebook-Business%20Manager-blue.svg)](https://business.facebook.com)
 
 ## 📋 Mô tả
 
-AdTool Pro là một công cụ tự động hóa mạnh mẽ để tách và kích hoạt tài khoản quảng cáo Facebook. Công cụ này kết hợp hai chức năng chính:
-
-1. **🔧 Tách tài khoản quảng cáo** từ Business Manager thành tài khoản cá nhân
-2. **🔓 Kích hoạt lại tài khoản** đã bị vô hiệu hóa
+AdTool Pro là một công cụ mạnh mẽ giúp tự động hóa các tác vụ quản lý tài khoản quảng cáo trong Facebook Business Manager. Tool được thiết kế với giao diện thân thiện và các tính năng tự động hóa tiên tiến.
 
 ## ✨ Tính năng chính
 
-### 🔧 Tách tài khoản quảng cáo
+### 🔧 **Tách tài khoản quảng cáo khỏi Business Manager**
 
-- Xử lý song song với giới hạn tài khoản thành công
-- Giao diện web trực quan với thống kê real-time
-- Tự động dừng khi đạt đủ số tài khoản thành công
-- Dừng khi số lần thất bại vượt quá ngưỡng (mặc định: 500)
-- Xử lý đồng thời tối đa 200 tài khoản
+- Tự động tách nhiều tài khoản quảng cáo cùng lúc
+- Xử lý song song để tăng tốc độ
+- Theo dõi tiến trình real-time
+- Xử lý lỗi thông minh
 
-### 🔓 Kích hoạt tài khoản
+### 🔄 **Kích hoạt lại tài khoản quảng cáo**
 
-- Tự động kích hoạt sau khi tách 5 phút
-- Xử lý tuần tự các tài khoản đang chờ đóng
-- Thống kê chi tiết tỷ lệ thành công/thất bại
-- Hoạt động trực tiếp trên Business Manager hoặc Ads Manager
+- Kích hoạt hàng loạt tài khoản bị vô hiệu hóa
+- Tự động xử lý các bước kích hoạt
+- Báo cáo chi tiết kết quả
 
-### 🎯 Tính năng tổng hợp
+### 🏷️ **Đổi tên tài khoản quảng cáo**
 
-- Quy trình tự động hoàn chỉnh
-- Giao diện thống nhất cho cả hai chức năng
-- Báo cáo tổng hợp chi tiết
-- Không tự đóng giao diện khi hoàn thành
+- Đổi tên hàng loạt theo pattern
+- Tự động thêm prefix/suffix
+- Xử lý tên trùng lặp
 
-## 🛠️ Cài đặt và sử dụng
+### 👥 **Quản lý quyền admin**
 
-### Phương pháp 1: Sử dụng Console (F12)
+- Xóa admin khỏi tài khoản quảng cáo
+- Xóa analysts và các role khác
+- Bảo mật tài khoản cá nhân
 
-1. **Mở Business Manager Facebook**
-2. **Mở Console (F12)**
-3. **Copy và paste code từ file `AdTool_Pro_Combined.js`**
-4. **Chương trình sẽ tự động khởi chạy**
+### 📊 **Giao diện thân thiện**
 
-### Phương pháp 2: Sử dụng Extension
+- Dashboard trực quan
+- Theo dõi tiến trình real-time
+- Thông báo kết quả chi tiết
+- Responsive design
 
-#### Cài đặt Extension:
+## 🚀 Cách sử dụng
 
-1. **Tải xuống thư mục `extension/`**
-2. **Mở Chrome, vào `chrome://extensions/`**
-3. **Bật "Developer mode"**
-4. **Click "Load unpacked" và chọn thư mục `extension/`**
-5. **Extension sẽ xuất hiện trên thanh công cụ**
+### Phương pháp 1: Bookmarklet (Khuyến nghị)
 
-#### Sử dụng Extension:
+1. **Tạo bookmark mới**
+   - Nhấn `Ctrl+D` để bookmark trang hiện tại
+   - Đổi tên thành "AdTool Pro"
+   - Thay đổi URL thành:
 
-1. **Mở Business Manager hoặc Ads Manager**
-2. **Click vào icon AdTool Pro trên thanh công cụ**
-3. **Cấu hình các thông số:**
-   - Số tài khoản thành công mục tiêu (mặc định: 600)
-   - Số lượng xử lý đồng thời (mặc định: 200)
-   - Ngưỡng thất bại để dừng (mặc định: 500)
-4. **Click "Bắt đầu quá trình"**
+```javascript
+javascript: (function () {
+  var script = document.createElement("script");
+  script.src =
+    "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/AdTool_Pro_Combined.js";
+  document.head.appendChild(script);
+  script.onload = function () {
+    startAdToolPro();
+  };
+})();
+```
+
+2. **Sử dụng**
+   - Vào [Facebook Business Manager](https://business.facebook.com)
+   - Click bookmark "AdTool Pro"
+   - Tool sẽ tự động khởi động
+
+### Phương pháp 2: Console trực tiếp
+
+1. **Mở Developer Tools**
+
+   - Vào Facebook Business Manager
+   - Nhấn `F12` hoặc `Ctrl+Shift+I`
+   - Chọn tab **Console**
+
+2. **Chạy tool**
+
+```javascript
+fetch(
+  "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/AdTool_Pro_Combined.js"
+)
+  .then((response) => response.text())
+  .then((code) => {
+    eval(code);
+    startAdToolPro();
+  });
+```
+
+### Phương pháp 3: Tampermonkey
+
+1. **Cài đặt Tampermonkey**
+
+   - Tải từ [Chrome Web Store](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+
+2. **Tạo script mới**
+
+```javascript
+// ==UserScript==
+// @name         AdTool Pro
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  AdTool Pro - Split Ad Account from BM & Reactivate Ad Account
+// @author       Your Name
+// @match        https://business.facebook.com/*
+// @grant        none
+// ==/UserScript==
+
+(function () {
+  "use strict";
+  var script = document.createElement("script");
+  script.src =
+    "https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/AdTool_Pro_Combined.js";
+  document.head.appendChild(script);
+  script.onload = function () {
+    if (typeof startAdToolPro === "function") {
+      startAdToolPro();
+    }
+  };
+})();
+```
+
+## 🛠️ Hướng dẫn sử dụng chi tiết
+
+### 1. **Tách tài khoản quảng cáo**
+
+1. Mở tool và chọn tab **"Tách tài khoản"**
+2. Nhập Business ID cần tách
+3. Chọn tài khoản quảng cáo muốn tách
+4. Click **"Bắt đầu tách"**
+5. Theo dõi tiến trình và kết quả
+
+### 2. **Kích hoạt tài khoản**
+
+1. Chọn tab **"Kích hoạt tài khoản"**
+2. Nhập danh sách tài khoản cần kích hoạt
+3. Click **"Bắt đầu kích hoạt"**
+4. Đợi quá trình hoàn tất
+
+### 3. **Đổi tên tài khoản**
+
+1. Chọn tab **"Đổi tên tài khoản"**
+2. Nhập pattern tên mới
+3. Chọn tài khoản cần đổi tên
+4. Click **"Bắt đầu đổi tên"**
+
+### 4. **Xóa admin**
+
+1. Chọn tab **"Xóa admin"**
+2. Chọn tài khoản cần xóa admin
+3. Click **"Bắt đầu xóa"**
 
 ## ⚙️ Cấu hình
 
-### Thông số có thể điều chỉnh:
+### Cài đặt cơ bản
 
-```javascript
-// Cập nhật cài đặt
-AdToolPro.updateSettings({
-  tachTargetSuccess: 600, // Số tài khoản thành công mục tiêu
-  maxConcurrentRequests: 200, // Số lượng xử lý đồng thời
-  failureThreshold: 500, // Ngưỡng thất bại để dừng
-});
-```
+- **Delay giữa các request**: 1000-3000ms (khuyến nghị)
+- **Số lượng xử lý song song**: 1-5 tài khoản
+- **Timeout**: 30-60 giây
 
-### Các hàm điều khiển:
+### Cài đặt nâng cao
 
-```javascript
-// Bắt đầu quá trình
-AdToolPro.start();
+- **Retry failed requests**: 3 lần
+- **Log level**: INFO/DEBUG/ERROR
+- **Auto save settings**: Bật/Tắt
 
-// Dừng quá trình
-AdToolPro.stop();
+## 🔒 Bảo mật
 
-// Xem thống kê
-console.log(AdToolPro.stats);
-```
-
-## 📊 Thống kê và báo cáo
-
-### Thống kê tách tài khoản:
-
-- Tổng số tài khoản đã xử lý
-- Số tài khoản thành công
-- Số tài khoản thất bại
-- Tỷ lệ thành công
-- Thời gian thực hiện
-
-### Thống kê kích hoạt tài khoản:
-
-- Tổng số tài khoản cần kích hoạt
-- Số tài khoản kích hoạt thành công
-- Số tài khoản thất bại
-- Số tài khoản bỏ qua
-- Tỷ lệ thành công
-
-### Báo cáo tổng hợp:
-
-- Tổng số tài khoản hoàn tất
-- Tổng thời gian thực hiện
-- Tỷ lệ thành công tổng thể
-
-## 🔄 Quy trình hoạt động
-
-1. **Khởi tạo**: Kiểm tra môi trường và tạo giao diện
-2. **Tách tài khoản**:
-   - Lấy danh sách tài khoản Read-Only
-   - Xử lý song song với giới hạn
-   - Dừng khi đạt mục tiêu hoặc vượt ngưỡng thất bại
-3. **Chờ kích hoạt**: Đợi 5 phút trước khi kích hoạt
-4. **Kích hoạt tài khoản**:
-   - Lấy danh sách tài khoản cần kích hoạt
-   - Xử lý tuần tự từng tài khoản
-   - Hoạt động trực tiếp trên Business Manager hoặc Ads Manager
-5. **Hoàn thành**: Hiển thị báo cáo tổng hợp
+- ✅ Chỉ chạy trên Facebook Business Manager
+- ✅ Không lưu trữ thông tin nhạy cảm
+- ✅ Xác thực quyền truy cập
+- ✅ Mã hóa dữ liệu local
 
 ## ⚠️ Lưu ý quan trọng
 
-### Yêu cầu hệ thống:
+### Trước khi sử dụng
 
-- Trình duyệt Chrome/Firefox/Edge hiện đại
-- Truy cập Business Manager Facebook
-- Quyền quản lý tài khoản quảng cáo
+- **Backup dữ liệu**: Sao lưu thông tin quan trọng
+- **Kiểm tra quyền**: Đảm bảo có quyền admin
+- **Test nhỏ**: Thử nghiệm với 1-2 tài khoản trước
 
-### Lưu ý bảo mật:
+### Trong quá trình sử dụng
 
-- Chỉ sử dụng trên tài khoản của bạn
-- Không chia sẻ access token
-- Đóng tab khi không sử dụng
+- **Không refresh trang**: Tránh làm gián đoạn quá trình
+- **Theo dõi tiến trình**: Quan sát log để phát hiện lỗi
+- **Xử lý lỗi**: Dừng tool nếu có lỗi nghiêm trọng
 
-### Giới hạn:
+### Sau khi sử dụng
 
-- Tối đa 200 tài khoản xử lý đồng thời
-- Ngưỡng thất bại mặc định: 500
-- Thời gian chờ kích hoạt: 5 phút
+- **Kiểm tra kết quả**: Xác nhận các thay đổi
+- **Lưu log**: Ghi lại kết quả để tham khảo
+- **Dọn dẹp**: Xóa cache và dữ liệu tạm
 
-## 🐛 Xử lý lỗi
+## 🐛 Troubleshooting
 
-### Lỗi thường gặp:
+### Lỗi thường gặp
 
-1. **"Không thể lấy access token"**
+**"Không thể tải AdTool Pro"**
 
-   - Giải pháp: Refresh trang và thử lại
+```javascript
+// Kiểm tra URL GitHub
+console.log("Kiểm tra URL:", script.src);
+```
 
-2. **"Không tìm thấy tài khoản Read-Only"**
+**"Không tìm thấy hàm startAdToolPro"**
 
-   - Giải pháp: Kiểm tra quyền truy cập Business Manager
+```javascript
+// Kiểm tra script đã load chưa
+console.log("Script loaded:", typeof startAdToolPro);
+```
 
-3. **"Script không hoạt động"**
-   - Giải pháp: Kiểm tra console để xem lỗi chi tiết
+**"Lỗi CORS"**
+
+- Sử dụng Tampermonkey thay vì bookmarklet
+- Hoặc host file trên CDN
+
+### Debug mode
+
+```javascript
+// Bật debug mode
+localStorage.setItem("adtool_debug", "true");
+```
 
 ## 📞 Hỗ trợ
 
-- **Email**: support@hasoftware.com
-- **Website**: https://hasoftware.com
-- **Documentation**: https://docs.hasoftware.com/adtool-pro
+### Liên hệ hỗ trợ
+
+- **Zalo**: Quét mã QR trong tool
+- **Telegram**: Quét mã QR trong tool
+- **Email**: [your-email@domain.com]
+
+### Báo cáo lỗi
+
+1. Mô tả lỗi chi tiết
+2. Cung cấp log lỗi
+3. Screenshot nếu có thể
+4. Thông tin môi trường
 
 ## 📄 License
 
-Copyright © 2024 HASoftware. All rights reserved.
+MIT License - Xem file [LICENSE](LICENSE) để biết thêm chi tiết.
+
+## 🤝 Đóng góp
+
+Mọi đóng góp đều được chào đón! Vui lòng:
+
+1. Fork repository
+2. Tạo feature branch
+3. Commit changes
+4. Push to branch
+5. Tạo Pull Request
+
+## 📈 Changelog
+
+### Version 1.0
+
+- ✅ Tách tài khoản quảng cáo
+- ✅ Kích hoạt tài khoản
+- ✅ Đổi tên tài khoản
+- ✅ Xóa admin
+- ✅ Giao diện responsive
+- ✅ Xử lý lỗi thông minh
 
 ---
 
-**HASoftware - Ads Solution - Auto Version**
-_Công cụ tự động hóa mạnh mẽ cho quảng cáo Facebook_
+**⭐ Nếu tool hữu ích, hãy cho một star nhé!**
