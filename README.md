@@ -1,6 +1,6 @@
 # AdTool Pro - Split Ad Account from BM & Reactivate Ad Account
 
-> **Công cụ tự động hóa quản lý tài khoản quảng cáo Facebook Business Manager**
+> **Công cụ tự động hóa Tách + Reactive + Rename + Remove Admin AdAccount**
 
 [![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/hasoftware/AdToolAdAccount)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
